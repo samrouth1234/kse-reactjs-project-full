@@ -19,6 +19,12 @@ export const AppRouter = () => {
 
 /**
  * 
+  const WithSuspense = ({ children }: { children: ReactNode }) => (
+    <Suspense fallback={<Loading addedClassName={'position-absolute top-0 w-100 left-0 sectionHeight'} />}>
+      {children}
+    </Suspense>
+  );
+
   <Route element={<AppLayout />}>
     <Route
       path={SOMETHING_WENT_WRONG}
